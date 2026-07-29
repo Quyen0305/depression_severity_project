@@ -1,0 +1,15 @@
+{
+  "selection_type": "implicit_filtering",
+  "description": "TF-IDF dùng min_df/max_df để loại token quá hiếm/quá phổ biến, max_features để giới hạn đặc trưng; TruncatedSVD giảm chiều cho XGBoost.",
+  "selected_tfidf_features": 3000,
+  "max_features": 3000,
+  "min_df": 2,
+  "max_df": 0.9,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "svd_components": 300,
+  "svd_explained_variance_ratio": 0.4506940245628357,
+  "xgboost_input_dimensions": 307
+}

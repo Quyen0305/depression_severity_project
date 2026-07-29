@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lắng nghe bạn — AI đồng hành cùng cảm xúc</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<nav class="navbar">
+  <div class="nav-brand">
+    <div class="nav-logo">🧠</div>
+    <div>
+      <div class="nav-title">Lắng nghe bạn</div>
+      <div class="nav-sub">AI đồng hành cùng cảm xúc</div>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#hero" class="nav-link active">🏠 Trang chủ</a>
+    <a href="#historySection" class="nav-link">🕐 Lịch sử</a>
+    <a href="#featureSection" class="nav-link">ℹ️ Giới thiệu</a>
+  </div>
+  <a href="#supportSection" class="nav-cta">💛 Hỗ trợ ngay</a>
+</nav>
+
+<main class="page">
+
+  <section class="hero" id="hero">
+    <div class="hero-left">
+      <span class="badge-powered">Powered by <b>🤖 DistilBERT AI</b></span>
+
+      <h1>Cùng lắng nghe <span class="leaf">🌱</span><br><span class="accent">những gì bạn đang cảm nhận</span></h1>
+      <p class="hero-desc">Viết ra vài dòng như thể đang tâm sự. Đây là công cụ nghiên cứu, giúp bạn nhìn lại cảm xúc của mình một cách nhẹ nhàng.</p>
+
+      <div class="mini-features">
+        <div class="mini-feature">
+          <div class="mini-ico green">🔒</div>
+          <div><b>Bảo mật</b><span>Dữ liệu của bạn luôn được bảo vệ</span></div>
+        </div>
+        <div class="mini-feature">
+          <div class="mini-ico green">🛡️</div>
+          <div><b>Ẩn danh</b><span>Không lưu thông tin định danh cá nhân</span></div>
+        </div>
+        <div class="mini-feature">
+          <div class="mini-ico green">🌿</div>
+          <div><b>Tích cực</b><span>Phân tích để hiểu và hỗ trợ bạn tốt hơn</span></div>
+        </div>
+      </div>
+
+      <div class="mascot-scene">
+        <svg width="150" height="150" viewBox="0 0 150 150">
+          <ellipse cx="75" cy="105" rx="42" ry="36" fill="#FBEFE3"/>
+          <ellipse cx="52" cy="45" rx="13" ry="26" fill="#FBEFE3"/>
+          <ellipse cx="98" cy="45" rx="13" ry="26" fill="#FBEFE3"/>
+          <ellipse cx="52" cy="48" rx="7" ry="16" fill="#F6D8C2"/>
+          <ellipse cx="98" cy="48" rx="7" ry="16" fill="#F6D8C2"/>
+          <circle cx="62" cy="100" r="4.5" fill="#4A3F3A"/>
+          <circle cx="88" cy="100" r="4.5" fill="#4A3F3A"/>
+          <ellipse cx="62" cy="88" rx="5" ry="4" fill="#F3B8A0" opacity=".7"/>
+          <ellipse cx="88" cy="88" rx="5" ry="4" fill="#F3B8A0" opacity=".7"/>
+          <path d="M 63 112 Q 75 119 87 112" stroke="#E8927C" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="input-card">
+        <div class="input-card-top">
+          <span>✏️ Hôm nay bạn muốn chia sẻ điều gì?</span>
+          <span class="char-count" id="charCount">0/1000</span>
+        </div>
+        <textarea id="inputText" maxlength="1000" placeholder="Viết ở đây nhé...">I feel so empty and worthless lately, nothing matters anymore.</textarea>
+
+        <div class="hint-row">
+          <span class="hint-text">💡 Gợi ý: Bạn có thể viết về cảm xúc, suy nghĩ, áp lực, hoặc bất cứ điều gì đang diễn ra.</span>
+          <span class="lang-note">🌐 Hỗ trợ tiếng Việt & English</span>
+        </div>
+
+        <div class="error-msg" id="errorMsg"></div>
+
+        <button class="primary" id="analyzeBtn" onclick="analyze()">💛 Chia sẻ với mình <span class="arrow">→</span></button>
+      </div>
+      <div class="safety-note">🛡️ Nội dung bạn chia sẻ chỉ phục vụ cho mục đích nghiên cứu và hỗ trợ tâm lý.</div>
+    </div>
+  </section>
+
+  <section class="feature-band" id="featureSection">
+    <div class="feature-card">
+      <div class="feature-ico green">🧠</div>
+      <h3>AI phân tích thông minh</h3>
+      <p>Sử dụng mô hình DistilBERT được tinh chỉnh cho dữ liệu sức khỏe tâm thần.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-ico peach">📊</div>
+      <h3>Đánh giá mức độ</h3>
+      <p>Dự đoán mức độ trầm cảm từ Minimum đến Severe với độ tin cậy rõ ràng.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-ico purple">💜</div>
+      <h3>Gợi ý tích cực</h3>
+      <p>Đưa ra khuyến nghị phù hợp và nguồn hỗ trợ đáng tin cậy khi bạn cần.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-ico blue">🛡️</div>
+      <h3>An toàn & riêng tư</h3>
+      <p>Dữ liệu được xử lý ẩn danh, không chia sẻ với bên thứ ba, bảo mật tuyệt đối.</p>
+    </div>
+  </section>
+
+  <div class="encourage-box">
+    <p id="encourageText">💛 "Bạn đã dũng cảm khi ở đây và lắng nghe chính mình."</p>
+  </div>
+
+  <section class="card result" id="resultCard">
+    <div class="result-hero">
+      <span class="badge" id="badge">Minimum</span>
+      <div class="confidence-box">
+        <div class="label">Độ tin cậy</div>
+        <div class="value" id="confVal">—</div>
+      </div>
+    </div>
+
+    <div class="desc-text" id="descText"></div>
+
+    <div class="subsection-label">📊 Phân bố xác suất</div>
+    <div class="prob-bars" id="probBars"></div>
+
+    <div class="highlight-box">
+      <h3>🔍 Từ khóa cảnh báo (rule-based)</h3>
+      <div class="method-note">Được tô theo danh sách từ khóa định sẵn — không phản ánh trực tiếp quyết định của mô hình.</div>
+      <div id="ruleKeywords"></div>
+
+      <button class="explain-btn" id="explainBtn" onclick="explainLime()">🧠 Giải thích bằng LIME (mô hình thật)</button>
+      <div class="explain-loading" id="explainLoading">Đang phân tích sâu, có thể mất 3-10 giây...</div>
+      <div id="limeResult" style="margin-top:12px;"></div>
+    </div>
+
+    <div class="message-box">
+      <h3>💌 Khuyến nghị</h3>
+      <div id="recommendation"></div>
+    </div>
+
+    <div class="crisis-box" id="crisisBox" style="display:none;">
+      <h3>💛 Bạn không đơn độc — hãy liên hệ ngay nếu cần</h3>
+      <div id="crisisList"></div>
+    </div>
+
+    <div class="actions">
+      <button class="ghost" onclick="exportResult()">⬇️ Lưu kết quả</button>
+      <button class="ghost" onclick="clearResult()">🔄 Thử lại</button>
+    </div>
+  </section>
+
+  <section class="card" id="historySection">
+    <div class="section-title"><span class="dot"></span><h2>Lịch sử chia sẻ gần đây</h2></div>
+    <div class="timeline" id="historyList"><div class="empty-note">Chưa có lịch sử nào.</div></div>
+  </section>
+
+  <section class="card" id="supportSection">
+    <div class="section-title"><span class="dot"></span><h2>💛 Nguồn hỗ trợ tâm lý</h2></div>
+    <div class="crisis-item">
+      <b>Tham vấn Tâm lý học đường PU Counseling Services</b>
+      <div class="crisis-actions">
+        <a class="crisis-btn secondary" href="mailto:pucs@phenikaa-uni.edu.vn">✉️ Gửi email</a>
+        <a class="crisis-btn secondary" href="https://m.me/pucounselingservices" target="_blank">💬 Nhắn tin</a>
+      </div>
+      <i>Dành cho sinh viên Đại học Phenikaa, bảo mật, không phán xét</i>
+    </div>
+    <div class="crisis-item">
+      <b>Đường dây nóng Ngày Mai</b>
+      <div class="crisis-actions">
+        <a class="crisis-btn" href="tel:0963061414">📞 Gọi ngay 0963 061 414</a>
+      </div>
+      <i>Hỗ trợ tâm lý miễn phí, chuyên về trầm cảm ở người trẻ</i>
+    </div>
+  </section>
+
+  <footer>
+    <div class="foot-title">🧠 DistilBERT Fine-tuned</div>
+    <div class="foot-sub">Mental Health Research Project</div>
+    <div>Phenikaa University</div>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

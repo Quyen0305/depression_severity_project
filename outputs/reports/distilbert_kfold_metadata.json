@@ -1,0 +1,19 @@
+{
+  "protocol": "kfold",
+  "seeds": [
+    42
+  ],
+  "n_splits": 3,
+  "test_size": null,
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "max_length": 150,
+    "batch_size": 8,
+    "epochs": 3,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip_norm": 1.0
+  },
+  "note": "Mỗi split/fold khởi tạo lại DistilBERT từ checkpoint tiền huấn luyện."
+}

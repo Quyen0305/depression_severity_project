@@ -1,0 +1,5 @@
+column,missing_count,blank_count,missing_ratio,status
+text,0,0,0.0,ok
+label,0,0,0.0,ok
+text_classical,0,0,0.0,ok
+text_neural,0,0,0.0,ok

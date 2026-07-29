@@ -1,0 +1,20 @@
+{
+  "n_rows": 3519,
+  "unknown_labels": [],
+  "exact_duplicate_rows_remaining": 0,
+  "word_count_q1": 65.0,
+  "word_count_q3": 101.0,
+  "word_count_iqr": 36.0,
+  "outlier_lower_bound": 11.0,
+  "outlier_upper_bound": 155.0,
+  "outlier_count": 112,
+  "outlier_policy": "Flag for review; do not automatically remove. Long/short posts may be valid. Sequence models truncate/pad according to max_length.",
+  "protected_attributes_available": [],
+  "demographic_fairness_metrics_possible": false,
+  "fairness_limitations": [
+    "Không có tuổi, giới tính, dân tộc, khu vực hoặc nhóm văn hóa.",
+    "Không thể tính demographic parity, equal opportunity hoặc equalized odds theo nhóm nhân khẩu học.",
+    "Dữ liệu Reddit tiếng Anh có thể thiên lệch theo nền tảng, ngôn ngữ và nhóm người chủ động đăng bài.",
+    "Phân tích theo độ dài văn bản chỉ là performance slicing, không thay thế fairness audit nhân khẩu học."
+  ]
+}

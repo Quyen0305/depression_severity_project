@@ -1,0 +1,7 @@
+split,seed,selection_method,selected_tfidf_features,max_features,min_df,max_df,ngram_min,ngram_max,svd_components,explained_variance_ratio,handcrafted_features
+seed_42,42,TF-IDF min_df/max_df/max_features,3000,3000.0,2.0,0.9,1.0,2.0,,,
+seed_42,42,TruncatedSVD + handcrafted,3000,,,,,,300.0,0.4506940245628357,7.0
+seed_52,52,TF-IDF min_df/max_df/max_features,3000,3000.0,2.0,0.9,1.0,2.0,,,
+seed_52,52,TruncatedSVD + handcrafted,3000,,,,,,300.0,0.45039576292037964,7.0
+seed_62,62,TF-IDF min_df/max_df/max_features,3000,3000.0,2.0,0.9,1.0,2.0,,,
+seed_62,62,TruncatedSVD + handcrafted,3000,,,,,,300.0,0.450144499540329,7.0

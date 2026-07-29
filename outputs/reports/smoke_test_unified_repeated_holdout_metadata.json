@@ -1,0 +1,33 @@
+{
+  "protocol": "Repeated Stratified Holdout",
+  "seeds": [
+    42
+  ],
+  "test_size": 0.2,
+  "models": [
+    "logreg",
+    "svm",
+    "xgboost"
+  ],
+  "distilbert_config": {
+    "model_name": "distilbert-base-uncased",
+    "max_length": 64,
+    "batch_size": 8,
+    "epochs": 1,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip_norm": 1.0
+  },
+  "bilstm_config": {
+    "max_length": 150,
+    "min_frequency": 2,
+    "embedding_dim": 100,
+    "hidden_dim": 64,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 1,
+    "learning_rate": 0.001
+  },
+  "data_leakage_control": "TF-IDF/SVD/vocabulary/model are fitted only on train of each split."
+}

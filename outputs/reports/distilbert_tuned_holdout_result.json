@@ -1,0 +1,28 @@
+{
+  "selection_metric": "macro_f1",
+  "secondary_metric": "qwk",
+  "seed": 42,
+  "train_dev_size": 2815,
+  "test_size": 704,
+  "best_config": {
+    "model_name": "distilbert-base-uncased",
+    "max_length": 150,
+    "batch_size": 8,
+    "epochs": 3,
+    "learning_rate": 3e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_clip_norm": 1.0
+  },
+  "test_metrics": {
+    "accuracy": 0.7514204545454546,
+    "precision_macro": 0.5466555615381163,
+    "recall_macro": 0.5987119309285633,
+    "macro_f1": 0.5684617764714767,
+    "qwk": 0.5419584872023431,
+    "inference_time_s": 0.797269900000174,
+    "inference_ms_per_sample": 1.132485653409338,
+    "training_time_s": 42.93171429999984,
+    "seed": 42
+  }
+}

@@ -6,6 +6,15 @@ Dự án bài tập lớn môn **Học máy**, xây dựng hệ thống phân lo
 minimum (0) < mild (1) < moderate (2) < severe (3)
 ```
 
+## Thành viên nhóm
+
+| Thành viên | MSSV |
+|---|---|
+| Vũ Minh Thư | 24100446 |
+| Nguyễn Thị Thanh Huệ | 24100162 |
+| Nguyễn Đình Quyền | 24100159 |
+| Tô Xuân Thảo | 24107885 |
+
 Dự án triển khai năm mô hình: Logistic Regression, SVM, XGBoost, BiLSTM và DistilBERT. Ngoài huấn luyện và đánh giá mô hình, repository còn có EDA, feature importance, phân tích lỗi, LIME và Web Demo bằng Flask.
 
 > Dự án chỉ phục vụ mục đích học tập và nghiên cứu. Kết quả dự đoán không phải chẩn đoán y khoa.

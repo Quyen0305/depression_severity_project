@@ -144,6 +144,8 @@ depression_severity_project/
 │   ├── figures/
 │   └── reports/
 ├── src/
+├── scripts/
+├── tests/
 ├── web/
 │   ├── backend/
 │   └── frontend/

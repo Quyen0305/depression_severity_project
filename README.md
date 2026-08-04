@@ -15,6 +15,10 @@ minimum (0) < mild (1) < moderate (2) < severe (3)
 | Nguyễn Đình Quyền | 24100159 |
 | Tô Xuân Thảo | 24107885 |
 
+## Nguồn dữ liệu
+
+Dataset được tham khảo từ repository [usmaann/Depression_Severity_Dataset](https://github.com/usmaann/Depression_Severity_Dataset).
+
 Dự án triển khai năm mô hình: Logistic Regression, SVM, XGBoost, BiLSTM và DistilBERT. Ngoài huấn luyện và đánh giá mô hình, repository còn có EDA, feature importance, phân tích lỗi, LIME và Web Demo bằng Flask.
 
 > Dự án chỉ phục vụ mục đích học tập và nghiên cứu. Kết quả dự đoán không phải chẩn đoán y khoa.

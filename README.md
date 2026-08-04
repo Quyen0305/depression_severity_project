@@ -300,6 +300,23 @@ outputs/reports/data_quality_fairness_report.md
 outputs/reports/feature_selection_and_importance.md
 ```
 
+## Kiểm thử và pipeline tổng hợp
+
+Chạy kiểm thử các hàm cöt lõi:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Chạy kiểm tra dữ liệu và phân tích đặc trưng:
+
+```bash
+python scripts/run_all.py
+```
+
+Thêm `--benchmark` để chạy benchmark đầy đủ. Kết quả được lưu trong `outputs/reports/`.
+Macro-F1 baseline XGBoost (ví dụ `0.4254`) chỉ là mốc so sánh, không phải kết quả tốt nhất của toàn hệ thống.
+
 
 ## Ghi chú
 
